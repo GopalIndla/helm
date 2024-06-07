@@ -1,0 +1,18 @@
+appName: shipping 
+replicaCount: 3
+maxUnavailable: 50
+appVersion: 305
+containerPort: 8080
+image: 355449129696.dkr.ecr.us-east-1.amazonaws.com/shipping
+tag: 305
+
+cpuLimit: "400Mi"
+memLimit: "500m"
+
+cpuReq: "250m"
+memReq: "100Mi"
+
+minReplicas: 3
+maxReplicas: 10
+
+averageUtilization: 75
